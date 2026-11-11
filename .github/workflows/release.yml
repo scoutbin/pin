@@ -20,7 +20,7 @@ jobs:
       contents: write
       id-token: write
       attestations: write
-    uses: scoutbin/spine/.github/workflows/go-release.yml@7f10714802eab4e05d645baa4b14200f19cd379d
+    uses: scoutbin/spine/.github/workflows/go-release.yml@de27083114470007d83bfa7ace9e83f39bdbb279
     with:
       tag: ${{ inputs.tag }}
       publish: ${{ inputs.publish }}

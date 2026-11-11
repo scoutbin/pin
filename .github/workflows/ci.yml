@@ -1,8 +1,11 @@
 name: CI
 on:
+  pull_request:
+  push:
+    branches: [main]
   workflow_dispatch:
 jobs:
   ci:
     permissions:
       contents: read
-    uses: scoutbin/spine/.github/workflows/go-ci.yml@7f10714802eab4e05d645baa4b14200f19cd379d
+    uses: scoutbin/spine/.github/workflows/go-ci.yml@de27083114470007d83bfa7ace9e83f39bdbb279
