@@ -1,0 +1,11 @@
+{
+  "name": "pin",
+  "repo": "scoutbin/pin",
+  "summary": "Audit system behaviour in a lockfile",
+  "license": "Apache-2.0",
+  "channels": {
+    "homebrew": { "tap": "scoutbin/homebrew-tap" },
+    "npm": { "package": "@scoutbin/pin" },
+    "action": true
+  }
+}
