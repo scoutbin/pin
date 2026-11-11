@@ -1,2 +1,3 @@
 # pin
-pin: audit system behaviour in a lockfile 
+
+pin: audit system behaviour in a lockfile
