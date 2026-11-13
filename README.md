@@ -18,13 +18,13 @@ The installers verify the archive's SHA-256 against `checksums.txt` before they 
 
 Installer variables:
 
-| Variable | Purpose |
-| --- | --- |
-| `PIN_VERSION` | Install this tag, such as `v0.0.1`. Takes precedence over `PIN_TRACK`. |
-| `PIN_TRACK` | `stable` (default), `alpha`, `beta` or `rc`. |
-| `PIN_INSTALL_DIR` | Install directory. Default `~/.local/bin` on install.sh, `%LOCALAPPDATA%\pin\bin` on install.ps1. |
-| `PIN_NO_MODIFY_PATH` | Set to `1` to keep the installer from changing PATH. |
-| `PIN_GITHUB_TOKEN` | Token for the release lookup. Not sent with downloads. |
+| Variable                | Purpose                                                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `PIN_VERSION`           | Install this tag, such as `v0.0.1`. Takes precedence over `PIN_TRACK`.                                           |
+| `PIN_TRACK`             | `stable` (default), `alpha`, `beta` or `rc`.                                                                     |
+| `PIN_INSTALL_DIR`       | Install directory. Default `~/.local/bin` on install.sh, `%LOCALAPPDATA%\pin\bin` on install.ps1.                |
+| `PIN_NO_MODIFY_PATH`    | Set to `1` to keep the installer from changing PATH.                                                             |
+| `PIN_GITHUB_TOKEN`      | Token for the release lookup. Not sent with downloads.                                                           |
 | `PIN_DOWNLOAD_BASE_URL` | install.sh only. Mirror for release assets. Requires `PIN_VERSION`, and must start with `https://` or `file://`. |
 
 ## GitHub Action
@@ -64,12 +64,12 @@ Exit codes: `0` success, `1` update available (from `check`), `2` any other erro
 
 Planned, per SPEC.md. None of these work yet:
 
-| Command | Intended behaviour |
-| --- | --- |
-| `pin record <command>` | Run the command, watch it, and write or update `pin.lock`. The only command that writes the lock. |
-| `pin run <command>` | Run and watch the command. Mode is `--audit` (alias `--monitor`) or `--enforce`. Defaults to audit. |
-| `pin audit <command>` | Shorthand for `pin run --audit <command>`. |
-| `pin enforce <command>` | Shorthand for `pin run --enforce <command>`. |
+| Command                 | Intended behaviour                                                                                  |
+| ----------------------- | --------------------------------------------------------------------------------------------------- |
+| `pin record <command>`  | Run the command, watch it, and write or update `pin.lock`. The only command that writes the lock.   |
+| `pin run <command>`     | Run and watch the command. Mode is `--audit` (alias `--monitor`) or `--enforce`. Defaults to audit. |
+| `pin audit <command>`   | Shorthand for `pin run --audit <command>`.                                                          |
+| `pin enforce <command>` | Shorthand for `pin run --enforce <command>`.                                                        |
 
 Planned modes:
 
