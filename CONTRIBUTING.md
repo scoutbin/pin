@@ -44,7 +44,19 @@ Building from source requires Go 1.24.2 or later, as declared in `go.mod`. pin i
 
 Build from the same commit or tag you are reporting against, so your results match the code the bug was reported on.
 
+- `go build .` builds the binary.
+- `go run . version` runs it.
+- `go test ./...` runs the tests.
+
 The CI pipeline is defined in `.github/workflows/ci.yml`. Release steps are in `.github/workflows/release.yml`. Both use reusable workflows from the spine repository.
+
+## Maintainers
+
+This section is for maintainers. It is not needed to report a bug.
+
+`install.sh`, `install.ps1` and `action.yml` are generated from `spine.json`. Do not edit them by hand. Run `go tool spine gen` to regenerate them.
+
+Releases run from the `release.yml` workflow, which is manual and takes two inputs: `tag` and `publish`. `publish=false` runs a dry run. `CHANGELOG.md` must have a section for the tag. To create it, run `go tool spine change <major|minor|patch> "<message>"` on an up-to-date main. The command commits the changelog and creates the tag. It does not push. See [RELEASING.md](https://github.com/scoutbin/spine/blob/main/RELEASING.md) for the full steps.
 
 ## License
 
