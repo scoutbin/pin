@@ -32,10 +32,13 @@ Installer variables:
 The action installs the pin binary on the runner and adds it to PATH. It does not run commands under pin yet.
 
 ```yaml
-- uses: scoutbin/pin@<ref>
+- uses: scoutbin/pin@v0.0.1
   with:
     version: v0.0.1
+- run: pin version
 ```
+
+The ref after `@` selects the action code, not the installed version. If you leave out `version`, the action installs the newest release on `track`, whatever the ref is. You can use a full commit SHA as the ref instead of the tag.
 
 Inputs:
 
