@@ -82,7 +82,7 @@ pin will not be a full security boundary, and it will not check file contents.
 
 ## Feedback
 
-Report bugs and request features in [GitHub Issues](https://github.com/scoutbin/pin/issues). See [CONTRIBUTING.md](CONTRIBUTING.md) for what to include and for why pull requests are not accepted. Report security vulnerabilities as described in [SECURITY.md](SECURITY.md).
+Report bugs and request features in [GitHub Issues](https://github.com/scoutbin/pin/issues). See [CONTRIBUTING.md](https://github.com/scoutbin/.github/blob/main/CONTRIBUTING.md) for what to include and for why pull requests are not accepted. Report security vulnerabilities as described in [SECURITY.md](https://github.com/scoutbin/.github/blob/main/SECURITY.md).
 
 ## License
 
